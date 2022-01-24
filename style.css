@@ -1,0 +1,120 @@
+body{
+    background-color: rgb(197, 207, 216);
+    margin: 0;
+    text-align: center;
+}
+*{
+    box-sizing: border-box;
+}
+ .search{
+     display: flex;
+     width: 50%;
+     margin: auto;
+     align-items: center;
+     justify-content: center;
+     gap: 4px;
+ }
+ .material-icons{
+     border: 1px solid black;
+     border-radius: 5px;
+     background-color: black;
+     color: white;
+     cursor: pointer;
+     padding: 4px;
+ }
+ .material-icons:hover{
+     background-color:aliceblue ;
+     color: black;
+ }
+ #food-box{
+     display: flex;
+     flex-direction:row;
+     justify-content: center;
+     gap: 1%;
+     flex-wrap: wrap;
+     margin-top: 3%;
+     position: relative;
+ }
+.meal img{
+    width: 100%;
+    height: 100%;
+    border:4px solid white;
+    border-radius: 50%;
+    
+}
+    
+
+ .meal{
+     cursor: pointer;
+     position: relative;
+     text-align: center;
+     height: 200px;
+     width: 200px;
+ }
+.meal-info{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s ease-in;
+    color: white;
+    opacity: 0;
+    border-radius: 50%;
+}
+.meal:hover .meal-info{
+    opacity: 1;
+}
+.singleMeal{
+    margin:30px auto;
+    width: 70%;
+}
+.images{
+    width: 300px;
+    height: 300px;
+    border: 4px solid white;
+    border-radius: 2px;
+    margin: 15px;
+}
+.single-meal-info{
+    margin: 20px;
+    padding: 10px;
+    border: 2px dashed rgb(255, 251, 0);
+    font-weight: bold;
+    border-radius: 5px;
+}
+.singleMeal p{
+    margin: 0;
+    letter-spacing: 0.5;
+    list-style:1.5;
+    font-size: 18px;
+}
+.singleMeal ul{
+    padding-left:0 ;
+    list-style-type:none;
+}
+.singleMeal ul li{
+    border: 1px solid #ededed;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+    display: inline-block;
+    color: brown;
+    font-size: 20px;
+    margin: 0 5px 5px 0; 
+    font-weight: bold;
+    padding: 5px;
+}
+
+@media (max-width: 500px){
+    .images{
+        width: 100%;
+        margin: auto;
+    }
+    .search{
+        width: 100%;
+    }
+}
